@@ -1,0 +1,301 @@
+:root{
+    --yellow-color: #FFFF00;
+    --yellow-light: #f8f184;
+    --blue-color:#19587d;
+    --white-color:#ffffff;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+h2{
+    font-family: cursive;
+    font-size: 36px;
+    font-weight: 400;
+}
+button{
+    font-family: cursive;
+    font-size: 20px;
+    font-weight: 400;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+nav{
+    background-color: black;
+}
+body{
+    background-color: black;
+    color: white;
+    font-family:'Space-Grotesk';
+    font-weight: 300;
+}
+
+.up-bar{
+    border-top: #727272 2px solid;
+    position: relative;
+    top: 132px;
+    width: 85%;
+    left: 102px;
+}
+
+/* Design de la navigation*/
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+
+}
+ul{
+    list-style:  none;
+}
+nav ul a{
+color: var(--white-color);
+font-size: 25px;
+font-weight: 500;
+font-family: Arial, Helvetica, sans-serif;
+/* Text decoration none*/
+}
+
+nav ul a:hover{
+    color: var(--yellow-color);
+}
+
+.logo:hover{
+    -webkit-filter: invert(4%) sepia(100%) saturate(1680%) hue-rotate(352deg) ;
+     filter: invert(4%) sepia(100%) saturate(1680%) hue-rotate(352deg);
+}
+
+/*Design de la partie du texte hero*/
+#hero{
+    background-image: url(../Illustrations/Bathome1.png);
+    height: 800px;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-color: #19587d;
+}
+
+/* Design de la section batman-personnage*/
+
+.batman-personnage{
+    display: flex;
+    justify-content: space-between;
+}
+
+#batman-cinema .titre, #batman-justice-league .titre{
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 30px 0;
+}
+
+#batman-cinema .description, #batman-justice-league .description{
+    margin-bottom: 40px;
+    text-align: justify;
+    width: 80%; 
+    font-size: 21px;
+}
+
+/*design de la section batman ennemi*/
+
+.batman-antagoniste{
+    display: flex;
+    justify-content: space-between;
+}
+
+/*design de la section batman allie*/
+.batman-ami{
+    display: flex;
+    justify-content: space-between;
+}
+
+/*Design de la section batman accolyte*/
+.batman-complice{
+    text-align: center;
+    display: flex;
+}
+
+ /*design de la section multimedia*/
+ #multimedia button{
+    position: relative;
+    top: 155px;
+    background: none;
+    border: none;
+ }
+ #multimedia button.right{
+    right: -85%;
+ }
+ #multimedia.slider-multimedia{
+    display: flex;
+    width: 60%;
+    margin: 40px auto;
+ }
+ #multimedia.slider-image{
+    width: 100%;
+ }
+#multimedia.slider-content{
+    padding: 15px;
+    background: color #727272; 
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+
+}
+
+#multimedia p{
+    font-size: 14px;
+}
+
+#multimedia .yellow{
+color: var(--yellow-color);
+}
+
+#contact{
+    background-color: darkslategray;
+    padding: 70px 0;
+    margin: 30px auto;
+}
+
+#contact .form{
+    width: 50%;
+    margin: 0 auto;
+
+}
+#contact h6{
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 32px;
+  
+}
+
+#contact.titre{
+   display: block;
+    margin:28px 0;
+}
+
+#contact.form input [type="email"]textarea{
+    display: block;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 80%;
+    border-bottom: 2px solid rgb(120,  120, 120);
+    background-color: transparent;
+    padding: 10px 0;
+}
+
+#contact .news{
+    margin: 15px 0;
+    border-bottom:2px solid rgb(120,  120, 120) ;
+}
+
+::-webkit-input-placeholder{
+    color: #f8f184;
+    font-size: 15px;
+
+}
+
+::-moz-placeholder{
+    color: #f8f184;
+    font-size: 15px;
+}
+
+::-ms-imput-placeholder{
+    color: #f8f184;
+    font-size: 15px;
+
+}
+
+::-ms-input-placeholder{
+    color: #f8f184;
+    font-size: 15px;
+
+}
+
+::placeholder{ 
+      color: #f8f184;
+      font-size: 15px;
+}
+.btn-group{
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.form input[type='radio']{
+    opacity: 0;
+}
+    
+
+.btn-group label{
+    cursor: pointer;
+    border: 2px solid;
+    -o-border-image: linear-gradient(69deg,red,blue)1;
+    border-image: linear-gradient(69deg,red,blue)1;
+    padding: 10px;
+    font-size: 20px;
+}
+
+input[type='submit']{
+    display: block;
+    width: 230px;
+    margin: 25px auto;
+    padding: 15px 0;
+    cursor: pointer;
+}
+
+#citations{
+    margin: 90px;
+}
+
+#citations .citation-carte{
+    text-align: center;
+    width: 50%;
+    margin: 0 auto ;
+}
+
+#citations .citation-auteur{
+    padding-top: 30px;
+    font-size: 10px;
+}
+
+#citations .guillemet-close{
+    float: right;
+}
+
+/* DESIGN DU FOOOTER*/
+footer{
+    margin-top: 162px ;
+}
+
+footer .footer-text{
+    text-align: center;
+    font-size: 15px;
+
+}
+
+footer .social-footer{
+    text-align: center;
+    margin: 50px 0;
+}
+
+footer .social-item{
+    padding: 15px;
+}
+
+
+
+
+#contact .icon img{
+    transform: rotate(90deg);
+    width: 20px;
+}
+
+.scroll{
+    transform: rotate(360deg);
+    width: 50px;
+
+    
+}
